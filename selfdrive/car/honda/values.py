@@ -72,6 +72,7 @@ class CAR:
   PILOT = "HONDA PILOT 2017 TOURING"
   PILOT_2019 = "HONDA PILOT 2019 ELITE"
   RIDGELINE = "HONDA RIDGELINE 2017 BLACK EDITION"
+  FIT = "HONDA FIT 2018 EX"
 
 # diag message that in some Nidec cars only appear with 1s freq if VIN query is performed
 DIAG_MSGS = {1600: 5, 1601: 8}
@@ -139,6 +140,10 @@ FINGERPRINTS = {
   # 2019 Ridgeline
   {
     57: 3, 145: 8, 229: 4, 308: 5, 316: 8, 339: 7, 342: 6, 344: 8, 380: 8, 392: 6, 399: 7, 419: 8, 420: 8, 422:8, 425: 8, 426: 8, 427: 3, 432: 7, 464: 8, 476: 4, 490: 8, 545: 5, 546: 3, 597: 8, 660: 8, 773: 7, 777: 8, 795: 8, 800: 8, 804: 8, 808: 8, 819: 7, 821: 5, 871: 8, 882: 2, 884: 7, 892: 8, 923: 2, 929: 8, 963: 8, 965: 8, 966: 8, 967: 8, 983: 8, 985: 3, 1027: 5, 1029: 8, 1036: 8, 1039: 8, 1064: 7, 1088: 8, 1089: 8, 1092: 1, 1108: 8, 1125: 8, 1296: 8, 1365: 5, 424: 5, 1613: 5, 1616: 5, 1618: 5, 1623: 5, 1668: 5
+  }],
+  # 2018 Honda Fit EX 
+  CAR.FIT:	[{
+	57: 3, 145: 8, 228: 5, 304: 8, 342: 6, 344: 8, 380: 8, 399: 7, 401: 8, 420: 8, 422: 8, 427: 3, 428: 8, 432: 7, 464: 8, 487: 4, 490: 8, 506: 8, 597: 8, 660: 8, 661: 4, 773: 7, 777: 8, 780: 8, 800: 8, 804: 8, 808: 8, 829: 5, 862: 8, 884: 7, 892: 8, 929: 8, 985: 3, 1024: 5, 1027: 5, 1029: 8, 1036: 8, 1039: 8, 1108: 8, 1322: 5, 1361: 5, 1365: 5, 1424: 5, 1600: 5, 1601: 8
   }]
 }
 
@@ -164,6 +169,7 @@ DBC = {
   CAR.PILOT: dbc_dict('honda_pilot_touring_2017_can_generated', 'acura_ilx_2016_nidec'),
   CAR.PILOT_2019: dbc_dict('honda_pilot_touring_2017_can_generated', 'acura_ilx_2016_nidec'),
   CAR.RIDGELINE: dbc_dict('honda_ridgeline_black_edition_2017_can_generated', 'acura_ilx_2016_nidec'),
+  CAR.FIT: dbc_dict('honda_fit_ex_2018_can_generated', 'acura_ilx_2016_nidec'),
 }
 
 STEER_THRESHOLD = {
@@ -182,6 +188,7 @@ STEER_THRESHOLD = {
   CAR.PILOT: 1200,
   CAR.PILOT_2019: 1200,
   CAR.RIDGELINE: 1200,
+  CAR.FIT: 1200,
 }
 
 SPEED_FACTOR = {
@@ -200,6 +207,7 @@ SPEED_FACTOR = {
   CAR.PILOT: 1.,
   CAR.PILOT_2019: 1.,
   CAR.RIDGELINE: 1.,
+  CAR.FIT: 1.,
 }
 
 # msgs sent for steering controller by camera module on can 0.
